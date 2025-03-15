@@ -1,0 +1,5 @@
+:root{
+    --ui-input-focus-outline: var(--color-primary-600);
+    --ui-input-place-holder: var(--color-gray-500);
+    --ui-input-invalid-outline: var(--color-danger-600);
+}
