@@ -1,0 +1,82 @@
+@import url(./default-colors.css);
+@import url(./themes/air.css);
+@import url(./themes/earth.css);
+@import url(./themes/water.css);
+@import url(./themes/fire.css);
+
+
+:root{
+    --c-primary: var(--c-primary-600);
+    --c-secondary: var(--c-secondary-600);
+    --c-accent: var(--c-accent-600);
+    --c-info: var(--c-info-600);
+    --c-warning: var(--c-warning-600);
+    --c-danger: var(--c-danger-600);
+    --c-success: var(--c-success-600);
+
+    --c-fg-title: var(--c-gray-900);
+    --c-fg-subtitle: var(--c-gray-800);
+    --c-fg: var(--c-gray-700);
+    --c-fg-muted: var(--c-gray-600);
+    --c-fg-soft: var(--c-gray-500);
+
+    --c-bg: var(--c-white);
+    --c-bg-subtle: var(--c-gray-100);
+    --c-bg-surface: var(--c-gray-50);
+    --c-bg-muted: var(--c-gray-200);
+    --c-bg-surface-elevated: var(--c-gray-300);
+
+    --c-border-strong: var(--c-gray-300);
+    --c-border-amphasis: var(--c-gray-400);
+    --c-border: var(--c-gray-200);
+    --c-border-sub: var(--c-gray-100);
+
+
+    --border-input: var(--c-gray-200);
+
+    /* card  */
+    --card: var(--c-white); 
+    --card-gray: var(--c-gray-100); 
+
+
+    /* popover : For Dropdowns & popovers  */
+    --popover: var(--c-white); 
+    --popover-gray: var(--c-gray-100);
+}
+
+
+.dark{
+    --c-primary: var(--c-primary-500);
+    --c-secondary: var(--c-secondary-500);
+    --c-accent: var(--c-accent-500);
+    --c-info: var(--c-info-500);
+    --c-warning: var(--c-warning-500);
+    --c-danger: var(--c-danger-500);
+    --c-success: var(--c-success-500);
+
+    --c-fg-title: var(--c-white);
+    --c-fg-subtitle: var(--c-gray-100);
+    --c-fg: var(--c-gray-300);
+    --c-fg-muted: var(--c-gray-400);
+
+    --c-bg: var(--c-gray-950);
+    --c-bg-subtle: var(--c-gray-900);
+    --c-bg-surface: --alpha(var(--c-gray-900)/70%);
+    --c-bg-muted: var(--c-gray-800);
+    --c-bg-surface-elevated: var(--c-gray-700);
+
+    --c-border-strong: var(--c-gray-700);
+    --c-border-amphasis: var(--c-gray-600);
+    --c-border: var(--c-gray-900);
+    --c-border-sub: var(--c-gray-900);
+
+    --border-input: var(--c-gray-900);
+
+    /* card  */
+    --card: var(--c-gray-950); 
+    --card-gray: var(--c-gray-900); 
+
+    /* popover : For Dropdowns & popovers  */
+    --popover: var(--c-gray-950); 
+    --popover-gray: var(--c-gray-900);
+}
