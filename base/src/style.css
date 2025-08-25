@@ -1,0 +1,176 @@
+@import "tailwindcss";
+@reference "./flexiwind.css";
+@reference "./buttons.css";
+@reference "./utilities.css";
+@plugin "@iconify/tailwind4" {
+  prefixes: solar, ph;
+  scale: 1.2;
+ }
+
+
+@custom-variant dark (&:is(.dark *));
+
+
+:root {
+  --ui-input-focus-outline: var(--c-primary);
+  --ui-input-place-holder: var(--c-gray-500);
+  --ui-input-invalid-outline: var(--c-danger);
+  --ring-bg: var(--c-primary);
+  --ring-offset-color: var(--c-bg);
+
+  --focus-ring: var(--c-primary-200);
+
+}
+.dark{
+  --c-border-input: var(--c-gray-700);
+  --focus-ring: var(--c-primary-800);
+}
+
+
+@theme inline {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --radius-global: var(--global-main-radius);
+
+    --color-white: var(--c-white);
+    --color-dark: var(--c-gray-950);
+
+    --color-primary: var(--c-primary);
+    --color-secondary: var(--c-secondary);
+    --color-accent: var(--c-accent);
+    --color-info: var(--c-info);
+    --color-warning: var(--c-warning);
+    --color-danger: var(--c-danger);
+    --color-success: var(--c-success);
+
+    --color-fg-title: var(--c-fg-title);
+    --color-fg-subtitle: var(--c-fg-subtitle);
+    --color-fg: var(--c-fg);
+    --color-fg-muted: var(--c-fg-muted);
+    --color-fg-soft: var(--c-fg-soft);
+
+    --color-bg: var(--c-bg);
+    --color-bg-subtle: var(--c-bg-subtle);
+    --color-bg-surface: var(--c-bg-surface);
+    --color-bg-muted: var(--c-bg-muted);
+    --color-bg-surface-elevated: var(--c-bg-surface-elevated);
+    --color-bg-card:var(--c-bg-card);
+    --color-bg-card-gray:var(--c-bg-card-gray);
+    --color-bg-overlay: var(--c-bg-overlay);
+    --color-bg-overlay-gray: var(--c-bg-overlay-gray);
+
+    --color-bg-progressbar: var(--c-bg-progressbar);
+
+    --color-border-strong: var(--c-border-strong);
+    --color-border-amphasis: var(--c-border-amphasis);
+    --color-border: var(--c-border);
+    --color-border-sub: var(--c-border-sub);
+    --color-border-card:var(--c-border-card);
+
+    --color-border-input: var(--c-border-input);
+
+    /* card  */
+    --color-card: var(--card);
+    --color-card-gray: var(--card-gray);
+
+
+    /* popover : For Dropdowns & popovers  */
+    --color-popover: var(--popover);
+    --color-popover-gray: var(--popover-gray);
+
+    --color-primary-50: var(--c-primary-50);
+    --color-primary-100: var(--c-primary-100);
+    --color-primary-200: var(--c-primary-200);
+    --color-primary-300: var(--c-primary-300);
+    --color-primary-400: var(--c-primary-400);
+    --color-primary-500: var(--c-primary-500);
+    --color-primary-600: var(--c-primary-600);
+    --color-primary-700: var(--c-primary-700);
+    --color-primary-800: var(--c-primary-800);
+    --color-primary-900: var(--c-primary-900);
+    --color-primary-950: var(--c-primary-950);
+
+    --color-secondary-50: var(--c-secondary-50);
+    --color-secondary-100: var(--c-secondary-100);
+    --color-secondary-200: var(--c-secondary-200);
+    --color-secondary-300: var(--c-secondary-300);
+    --color-secondary-400: var(--c-secondary-400);
+    --color-secondary-500: var(--c-secondary-500);
+    --color-secondary-600: var(--c-secondary-600);
+    --color-secondary-700: var(--c-secondary-700);
+    --color-secondary-800: var(--c-secondary-800);
+    --color-secondary-900: var(--c-secondary-900);
+    --color-secondary-950: var(--c-secondary-950);
+
+    --color-accent-50: var(--c-accent-50);
+    --color-accent-100: var(--c-accent-100);
+    --color-accent-200: var(--c-accent-200);
+    --color-accent-300: var(--c-accent-300);
+    --color-accent-400: var(--c-accent-400);
+    --color-accent-500: var(--c-accent-500);
+    --color-accent-600: var(--c-accent-600);
+    --color-accent-700: var(--c-accent-700);
+    --color-accent-800: var(--c-accent-800);
+    --color-accent-900: var(--c-accent-900);
+    --color-accent-950: var(--c-accent-950);
+
+    --color-info-50: var(--c-info-50);
+    --color-info-100: var(--c-info-100);
+    --color-info-200: var(--c-info-200);
+    --color-info-300: var(--c-info-300);
+    --color-info-400: var(--c-info-400);
+    --color-info-500: var(--c-info-500);
+    --color-info-600: var(--c-info-600);
+    --color-info-700: var(--c-info-700);
+    --color-info-800: var(--c-info-800);
+    --color-info-900: var(--c-info-900);
+    --color-info-950: var(--c-info-950);
+
+    --color-gray-50: var(--c-gray-50);
+    --color-gray-100: var(--c-gray-100);
+    --color-gray-200: var(--c-gray-200);
+    --color-gray-300: var(--c-gray-300);
+    --color-gray-400: var(--c-gray-400);
+    --color-gray-500: var(--c-gray-500);
+    --color-gray-600: var(--c-gray-600);
+    --color-gray-700: var(--c-gray-700);
+    --color-gray-800: var(--c-gray-800);
+    --color-gray-900: var(--c-gray-900);
+    --color-gray-950: var(--c-gray-950);
+
+    --color-warning-50: var(--c-warning-50);
+    --color-warning-100: var(--c-warning-100);
+    --color-warning-200: var(--c-warning-200);
+    --color-warning-300: var(--c-warning-300);
+    --color-warning-400: var(--c-warning-400);
+    --color-warning-500: var(--c-warning-500);
+    --color-warning-600: var(--c-warning-600);
+    --color-warning-700: var(--c-warning-700);
+    --color-warning-800: var(--c-warning-800);
+    --color-warning-900: var(--c-warning-900);
+    --color-warning-950: var(--c-warning-950);
+
+    --color-danger-50: var(--c-danger-50);
+    --color-danger-100: var(--c-danger-100);
+    --color-danger-200: var(--c-danger-200);
+    --color-danger-300: var(--c-danger-300);
+    --color-danger-400: var(--c-danger-400);
+    --color-danger-500: var(--c-danger-500);
+    --color-danger-600: var(--c-danger-600);
+    --color-danger-700: var(--c-danger-700);
+    --color-danger-800: var(--c-danger-800);
+    --color-danger-900: var(--c-danger-900);
+    --color-danger-950: var(--c-danger-950);
+
+    --color-success-50: var(--c-success-50);
+    --color-success-100: var(--c-success-100);
+    --color-success-200: var(--c-success-200);
+    --color-success-300: var(--c-success-300);
+    --color-success-400: var(--c-success-400);
+    --color-success-500: var(--c-success-500);
+    --color-success-600: var(--c-success-600);
+    --color-success-700: var(--c-success-700);
+    --color-success-800: var(--c-success-800);
+    --color-success-900: var(--c-success-900);
+    --color-success-950: var(--c-success-950);
+}

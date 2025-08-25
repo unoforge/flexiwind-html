@@ -1,19 +1,19 @@
-# Flexiwnd HTML (Tailwind v4)
+# Flexiwind HTML (Tailwind v4)
 
 
-## 💻 Resources
+## Resources
 
 
 
-## ⚙️ Setting Up
+## Setting Up
 
 #### Local Development
 
 
 
 ## 🙌 Credit
- - [Tailus UI](https://github.com/tailus-ui)
- - [float ui]()
+ - [Tailus UI](https://html.tailus.io/)
+ - [Pagedone](https://pagedone.io/)
 
 ## Contributing
 
