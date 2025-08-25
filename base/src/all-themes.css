@@ -4,8 +4,7 @@
 @import url(./themes/water.css);
 @import url(./themes/fire.css);
 
-
-:root{
+:root {
     --c-primary: var(--c-primary-600);
     --c-secondary: var(--c-secondary-600);
     --c-accent: var(--c-accent-600);
@@ -26,26 +25,18 @@
     --c-bg-muted: var(--c-gray-200);
     --c-bg-surface-elevated: var(--c-gray-300);
 
+    --c-bg-progressbar: var(--c-bg-muted);
+    --c-bg-range: var(--c-bg-muted);
+
     --c-border-strong: var(--c-gray-300);
     --c-border-amphasis: var(--c-gray-400);
     --c-border: var(--c-gray-200);
     --c-border-sub: var(--c-gray-100);
-
-
-    --border-input: var(--c-gray-200);
-
-    /* card  */
-    --card: var(--c-white); 
-    --card-gray: var(--c-gray-100); 
-
-
-    /* popover : For Dropdowns & popovers  */
-    --popover: var(--c-white); 
-    --popover-gray: var(--c-gray-100);
+    --c-border-input: var(--c-gray-200);
 }
 
 
-.dark{
+.dark {
     --c-primary: var(--c-primary-500);
     --c-secondary: var(--c-secondary-500);
     --c-accent: var(--c-accent-500);
@@ -69,14 +60,4 @@
     --c-border-amphasis: var(--c-gray-600);
     --c-border: var(--c-gray-900);
     --c-border-sub: var(--c-gray-900);
-
-    --border-input: var(--c-gray-900);
-
-    /* card  */
-    --card: var(--c-gray-950); 
-    --card-gray: var(--c-gray-900); 
-
-    /* popover : For Dropdowns & popovers  */
-    --popover: var(--c-gray-950); 
-    --popover-gray: var(--c-gray-900);
 }

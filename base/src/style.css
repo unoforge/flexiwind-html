@@ -10,6 +10,23 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+:root {
+  --ui-input-focus-outline: var(--c-primary);
+  --ui-input-place-holder: var(--c-gray-500);
+  --ui-input-invalid-outline: var(--c-danger);
+  --ring-bg: var(--c-primary);
+  --ring-offset-color: var(--c-bg);
+
+  --focus-ring: var(--c-primary-200);
+
+}
+.dark{
+  --c-border-input: var(--c-gray-700);
+  --focus-ring: var(--c-primary-800);
+}
+
+
 @theme inline {
     --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -50,7 +67,7 @@
     --color-border-sub: var(--c-border-sub);
     --color-border-card:var(--c-border-card);
 
-    --color-border-input: var(--border-input);
+    --color-border-input: var(--c-border-input);
 
     /* card  */
     --color-card: var(--card);
