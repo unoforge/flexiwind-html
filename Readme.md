@@ -1,30 +1,3 @@
-# Flexiwind HTML (Tailwind v4)
+# Flexiwind (Unify UI Tailwind)
 
-
-## Resources
-
-
-
-## Setting Up
-
-#### Local Development
-
-
-
-## 🙌 Credit
- - [Tailus UI](https://html.tailus.io/)
- - [Pagedone](https://pagedone.io/)
-
-## Contributing
-
-If you're interested in contributing to Flexiwind, please read our [contributing docs](CONTRIBUTING.MD) before submitting a pull request.
-
-
-## Request Component/Block
-
-
-
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [**MIT License**](LICENSE) file for details.
+> **⚠️ Note:** This project is no longer actively maintained. We are now focusing on new projects, starting with [Laravel-UI](https://github.com/unoforge/laravel-ui) as our primary focus.
